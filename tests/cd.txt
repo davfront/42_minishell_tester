@@ -1,0 +1,41 @@
+cd
+cd .
+cd ./
+cd ./././.
+cd ././././
+cd ..
+cd ../
+cd ../..
+cd ../.
+cd .././././.
+cd src
+cd src obj
+cd 'src'
+cd "src"
+cd '/etc'
+cd /e'tc'
+cd /e"tc"
+cd sr
+cd Makefile
+cd ../minishell
+cd ../../../../../../..
+cd .././../.././../bin/ls
+cd /
+cd '/'
+cd /// && pwd
+cd //////// && pwd
+cd '////////' && pwd
+cd /minishell
+cd / && cd ..
+cd _
+cd -
+cd ---
+cd $HOME
+cd $HOME $HOME
+cd $HOME/42_works
+cd "$PWD/src"
+cd '$PWD/src'
+unset HOME && cd $HOME
+unset HOME && export HOME= && cd
+unset HOME && export HOME && cd
+cd minishell Docs crashtest.c

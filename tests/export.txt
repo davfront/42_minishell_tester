@@ -1,0 +1,96 @@
+env | wc -l
+export HOLA=bonjour && env | grep HOLA
+export       HOLA=bonjour && env | grep HOLA
+export | wc -l
+export Hola && export | grep Hola
+export Hola9hey && export | grep Hola
+export $DONTEXIST | wc -l
+export | grep "HOME"
+export "
+export =
+export %
+export $?
+export ?=2
+export 9HOLA=
+export HOLA9=bonjour && env | grep HOLA
+export _HOLA=bonjou$> env | grep HOLA
+export ___HOLA=bonjour && env | grep HOLA
+export _HO_LA_=bonjour && env | grep HO_LA
+export HOL@=bonjour
+export -HOLA=bonjour
+export --HOLA=bonjour
+export HOLA-=bonjour
+export HO-LA=bonjour
+export HOL.A=bonjour
+export HOL}A=bonjour
+export HOL{A=bonjour
+export HO*LA=bonjour
+export HO#LA=bonjour
+export HO@LA=bonjour
+export HO!LA=bonjour
+export HO$?LA=bonjour && env | grep HO
+export +HOLA=bonjour
+export HOL+A=bonjour
+export HOLA =bonjour
+export HOLA = bonjour
+export HOLA=bon jour && env | grep HOLA
+export HOLA= bonjour && env | grep HOLA
+export HOLA=bonsoir && export HOLA=bonretour && export HOLA=bonjour && env | grep HOLA
+export HOLA=$HOME && env | grep HOLA
+export HOLA=bonjour$HOME && env | grep HOLA
+export HOLA=$HOMEbonjour && env | grep HOLA
+export HOLA=bon$jour && env | grep HOLA
+export HOLA=bon@jour && env | grep HOLA
+export HOLA=bon;jour && env | grep HOLA
+export HOLA=bon!jour
+export HOLA=bon"jour" && env | grep HOLA
+export HOLA$USER=bonjour && env | grep HOLA
+export HOLA=bonjour=casse-to$> echo $HOLA"
+export "HOLA=bonjour"=casse-toi && echo $HOLA
+export HOLA=bonjour && export BYE=casse-toi && echo $HOLA et $BYE
+export HOLA=bonjour BYE=casse-toi && echo $HOLA et $BYE
+export $HOLA=bonjour && env | grep HOLA
+export HOLA="bonjour      "   && echo $HOLA | cat -e
+export HOLA="   -n bonjour   "   && echo $HOLA
+export HOLA="bonjour   "/ && echo $HOLA
+export HOLA='"' && echo " $HOLA " | cat -e
+export HOLA=at && c$HOLA Makefile
+export "" HOLA=bonjour && env | grep HOLA
+export HOLA="cat Makefile | grep NAME" $> echo $HOLA"
+export HOLA=hey && echo $HOLA$HOLA$HOLA=hey$HOLA
+export HOLA="  bonjour  hey  "  && echo $HOLA | cat -e
+export HOLA="  bonjour  hey  "  && echo """$HOLA""" | cat -e
+export HOLA="  bonjour  hey  "  && echo wesh"$HOLA" | cat -e
+export HOLA="  bonjour  hey  "  && echo wesh""$HOLA.
+export HOLA="  bonjour  hey  "  && echo wesh$""HOLA.
+export HOLA="  bonjour  hey  "  && echo wesh$"HOLA HOLA".
+export HOLA=bonjour && export HOLA=" hola et $HOLA" && echo $HOLA
+export HOLA=bonjour && export HOLA=' hola et $HOLA' && echo $HOLA"
+export HOLA=bonjour && export HOLA=" hola et $HOLA"$HOLA && echo $HOLA"
+export HOLA="ls        -l    - a" && echo $HOLA"
+export HOLA="s -la" && l$HOLA
+export HOLA="s -la"  && l"$HOLA"
+export HOLA="s -la"  && l'$HOLA'
+export HOLA="l"  && $HOLAs
+export HOLA="l"  && "$HOLA"s
+export HOL=A=bonjour && env | grep HOL
+export HOLA="l"  && '$HOLA's
+export HOL=A="" && env | grep HOL
+export TE+S=T && env | grep TE
+export "="
+export ''=''
+export "="="="
+export '='='='
+export HOLA=p && export BYE=w && $HOLA"BYE"d
+export HOLA=p && export BYE=w && "$HOLA"'$BYE'd
+export HOLA=p && export BYE=w && "$HOLA""$BYE"d
+export HOLA=p && export BYE=w && $"HOLA"$"BYE"d
+export HOLA=p && export BYE=w && $'HOLA'$'BYE'd
+export HOLA=-n && "echo $HOLA" hey
+export A=1 B=2 C=3 D=4 E=5 F=6 G=7 H=8 && echo "$A'$B"'$C"$D'$E'"$F'"'$G''$H"
+export HOLA=bonjour && env | grep HOLA && unset HOLA && env | grep HOLA
+export HOLA=bonjour && env | grep HOLA && unset HOLA && unset HOLA && env | grep HOLA
+unset PATH && echo $PATH
+unset PATH && ls
+unset ""
+unset INEXISTANT

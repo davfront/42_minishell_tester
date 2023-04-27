@@ -1,0 +1,7 @@
+cd / | echo $? && pwd
+cd ~
+mkdir a && mkdir a/b && cd a/b && rm -r ../../a && cd ..
+mkdir a && mkdir a/b && cd a/b && rm -r ../../a && pwd
+mkdir a && mkdir a/b && cd a/b && rm -r ../../a && echo $PWD && echo $OLDPWD
+mkdir a && mkdir a/b && cd a/b && rm -r ../../a && cd && echo $PWD && echo $OLDPWD
+mkdir a && cd a && rm -r ../a && echo $PWD && echo $OLDPWD
